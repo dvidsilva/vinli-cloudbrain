@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 
+#import <VinliNet/VLSessionManager.h>
+
+
 @interface AppDelegate ()
 
 @end
@@ -15,8 +18,20 @@
 @implementation AppDelegate
 
 
+
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    [[VLSessionManager sharedManager] handleCustomURL:url];
+    return YES;
+}
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [VLSessionManager sharedManager].clientId =  @"6ac7a559-ad7a-4d8a-8475-9145af675f76";
+    [VLSessionManager sharedManager].redirectUri =   @"dvidsilva.vinlicloudbrain.speedometer";
+
     return YES;
 }
 

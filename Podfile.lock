@@ -1,0 +1,14 @@
+PODS:
+  - VinliBluetooth (1.0):
+    - VinliNet
+  - VinliNet (1.0.6)
+
+DEPENDENCIES:
+  - VinliBluetooth
+  - VinliNet
+
+SPEC CHECKSUMS:
+  VinliBluetooth: d83e956c95bfa58c561572d7ba7db20ff8dc4fa9
+  VinliNet: 04468bdda4ed4896f0083f4c2f34c5b3ebb6f355
+
+COCOAPODS: 0.38.2

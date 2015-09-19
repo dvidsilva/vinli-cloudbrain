@@ -11,5 +11,10 @@
 @interface ViewController : UIViewController
 
 
+// Setup a label and connect it to the ViewController.
+@property (weak, nonatomic) IBOutlet UILabel* speedLabel;
+
+
+
 @end
 
