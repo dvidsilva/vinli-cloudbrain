@@ -29,7 +29,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [VLSessionManager sharedManager].clientId =  @"6ac7a559-ad7a-4d8a-8475-9145af675f76";
+    [VLSessionManager sharedManager].clientId =  @"f1d3b273-25ef-47fb-8851-eddf5ccd33b2";
     [VLSessionManager sharedManager].redirectUri =   @"dvidsilva.vinlicloudbrain.speedometer";
 
     return YES;

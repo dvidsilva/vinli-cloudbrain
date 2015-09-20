@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 #import <VinliBluetooth/VinliBluetooth.h>
+#import <VinliNet/VinliSDK.h>
 #import <VinliNet/VLSessionManager.h>
 
 
@@ -26,7 +27,6 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated {
-    //[super viewDidAppear:<#animated#>];
     [[VLSessionManager sharedManager] loginWithCompletion:^(VLSession *session, NSError *error)
     {
         if (!error) {
